@@ -28,13 +28,16 @@ const double step = 0.2;
 
 for (x; x >= LOW_BOUND && x <= UP_BOUND; x += step){
     if (x >= LOW_BOUND && x <= UP_BOUND){
-            double y = GetY(x);
-            cout << " y = " << y << "\n";
+        const auto y = GetY(x);
+        cout « " y = " « y « "\n";
+    } else {
+        const auto y = GetY(x);
+        cout « " y = " « y « "\n" « "Нет решения, так как х не входит в область определения " « endl;
     }
 }
-cout << "Нет решения, так как х не входит в область определения " << endl;
 return 0;
 }
+
 
 double GetY(double x)
 {
