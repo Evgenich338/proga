@@ -9,7 +9,7 @@ using namespace std;
 * \param double value2 - переменная воодимая user-ом
 * \return выводит + перменных value1 и value2
 */
-int GetDistancePlus(const double value1, const double value2);
+double GetDistancePlus(const double value1, const double value2);
 
 /**
 * \brief функция вычисления  -
@@ -17,7 +17,7 @@ int GetDistancePlus(const double value1, const double value2);
 * \param double value2 - переменная воодимая user-ом
 * \return выводит - перменных value1 и value2
 */
-int GetDistanceMinus(const double value1, const double value2);
+double GetDistanceMinus(const double value1, const double value2);
 
 /**
 * \brief функция вычисления  *
@@ -25,7 +25,7 @@ int GetDistanceMinus(const double value1, const double value2);
 * \param double value2 - переменная воодимая user-ом
 * \return выводит * перменных value1 и value2
 */
-int GetDistanceplusMultiplication(const double value1, const double value2);
+double GetDistanceplusMultiplication(const double value1, const double value2);
 
 /**
 * \brief функция вычисления  /
@@ -33,7 +33,7 @@ int GetDistanceplusMultiplication(const double value1, const double value2);
 * \param double value2 - переменная воодимая user-ом
 * \return выводит / перменных value1 и value2
 */
-int GetDistancedivision(const double value1, const double value2);
+double GetDistancedivision(const double value1, const double value2);
 
 
 /**
@@ -60,22 +60,22 @@ cout<<plus<<" "<<minus<<" "<<multiplication<<" "<<division;
 return 0;
 }
 
-int GetDistancePlus(const double value1, const double value2)
+double GetDistancePlus(const double value1, const double value2)
 {
 return value1+value2;
 }
 
-int GetDistanceMinus(const double value1, const double value2)
+double GetDistanceMinus(const double value1, const double value2)
 {
 return value1-value2;
 }
 
-int GetDistanceplusMultiplication(const double value1, const double value2)
+double GetDistanceplusMultiplication(const double value1, const double value2)
 {
 return value1*value2;
 }
 
-int GetDistancedivision(const double value1, const double value2)
+double GetDistancedivision(const double value1, const double value2)
 {
 return value1/value2;
 }

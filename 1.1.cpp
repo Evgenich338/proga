@@ -44,7 +44,7 @@ double GetA(const double x, const double y, const double z)
 	return (exp(-y * z) * sin(x * z - y) - sqrt(abs(y * z + x)));
 }
 
-double GetB(const double x, const double y, const double z, double a)
+double GetB(const double x, const double y, const double z)
 {
 	return y * sin(pow(a * z, 2) * cos(2 * z)) - 1;
 }
