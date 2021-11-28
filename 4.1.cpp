@@ -146,7 +146,7 @@ int GetSumEvenNumbers(int* array, const size_t size) {
 void count_digit_numbers(int* array, const size_t size) {
 	int score = 0;
 	for (size_t i = 0; i < size; i++) {
-		if (array[i]>10 && array[i]<100) {
+		if (abs(array[i])>10 && abs(array[i])<100) {
 			score++;
 		}
 	}
@@ -162,6 +162,6 @@ void SwapNumbers(int* array, const size_t size) {
 		}
 	}
 	for (size_t i = 1; i < size; i++) {
-        cout<<array[i];
+        cout<<array[i]<<" ";
 	}
 }
