@@ -1,10 +1,12 @@
 #include <iostream>
+
 using namespace std;
 
 /**
 * \brief сложение
 *\ param value1 переменная вводимая пользователем
 *\ param value2 переменная вводимая пользователем
+*\ return результат сложения
 */
 double addition(double value1, double value2);
 
@@ -12,13 +14,15 @@ double addition(double value1, double value2);
 * \brief вычитание
 *\ param value1 переменная вводимая пользователем
 *\ param value2 переменная вводимая пользователем
+*\ return результат вычитания
 */
-double difff(double value1, double value2);
+double subtraction(double value1, double value2);
 
 /**
 * \brief умножение
 *\ param value1 переменная вводимая пользователем
 *\ param value2 переменная вводимая пользователем
+*\ return результат умножения
 */
 double multiplication(double value1, double value2);
 
@@ -26,21 +30,22 @@ double multiplication(double value1, double value2);
 * \brief деление
 *\ param value1 переменная вводимая пользователем
 *\ param value2 переменная вводимая пользователем
+*\ return результат деления
 */
-double chass(double value1, double value2);
+double quotient(double value1, double value2);
 
 enum path
 {
 sum = 1,
-diff = 2,
+deduction = 2,
 multiply = 3,
-chas = 4
+privat = 4
 };
 
 /**
 * \brief Точка входа в программу.
-* \param value1 - переменная вводимая user-ом
-* \param value2 - переменная вводимая user-ом
+* \param valueA - переменная вводимая user-ом
+* \param valueB - переменная вводимая user-ом
 * \param choice - переменная для выбора алгоритма
 * \return Код ошибки (0 - успех).
 */
@@ -64,9 +69,9 @@ double rezult = addition( valueA, valueB);
 cout<<rezult;
 break;
 }
-case path::diff:
+case path::deduction:
 {
-double rezult = difff(valueA,valueB);
+double rezult = subtraction(valueA,valueB);
 cout<<rezult;
 break;
 }
@@ -76,9 +81,9 @@ double rezult = multiplication(valueA, valueB);
 cout<<rezult;
 break;
 }
-case path::chas:
+case path::privat:
 {
-double rezult = chass(valueA, valueB);
+double rezult = quotient(valueA, valueB);
 cout<<rezult;
 break;
 }
@@ -93,7 +98,7 @@ double addition(double value1, double value2)
 return value1+value2;
 }
 
-double difff(double value1, double value2)
+double subtraction(double value1, double value2)
 {
 return value1-value2;
 }
@@ -102,6 +107,6 @@ double multiplication(double value1, double value2){
 return value1*value2;
 }
 
-double chass(double value1, double value2){
+double quotient(double value1, double value2){
 return value1/value2;
 }
